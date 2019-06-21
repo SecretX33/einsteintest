@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name" translatable="false">Einstein Test</string>
+    <string name="dicas">Hints</string>
+    <string name="tvCor">Color</string>
+    <string name="tvNacio">Nationality</string>
+    <string name="tvBebida">Drink</string>
+    <string name="tvCigarro">Cigarette</string>
+    <string name="tvAnimal">Animal</string>
+    <string name="regra1">Norwegian lives in the first house.</string>
+    <string name="regra2">English lives in the Red house.</string>
+    <string name="regra3">Swedish has dogs as pets.</string>
+    <string name="regra4">Danish drinks tea.</string>
+    <string name="regra5">Green house is on the left side of the White house.</string>
+    <string name="regra6">Man who lives in the Green house drinks Coffee.</string>
+    <string name="regra7">Man who smokes Pall Mall creates Birds.</string>
+    <string name="regra8">Man who lives in the Yellow House smokes Dunhill.</string>
+    <string name="regra9">Man who lives in the middle house drinks milk.</string>
+    <string name="regra10">Man who smokes Blends lives next to the one with Cats.</string>
+    <string name="regra11">Man who creates Horses lives next to the one who smokes Dunhill.</string>
+    <string name="regra12">Man who smokes BlueMaster drinks Beer.</string>
+    <string name="regra13">German smokes Prince.</string>
+    <string name="regra14">Norwegian lives next to the Blue house.</string>
+    <string name="regra15">Man who smokes Blends is the neighbor of the one who drinks Water.</string>
+    <string name="casa">House</string>
+    <string name="reiniciar">Restart</string>
+    <string name="english" translatable="false">English</string>
+    <string name="portugues" translatable="false">Português</string>
+    <string name="lingua_sistema">System Language</string>
+    <string name="select_language">Select language</string>
+    <string name="settings">Settings</string>
+    <string name="sair">Exit</string>
+
+
+    <string-array name="arrayCor">
+        <item />
+        <item>Yellow</item>
+        <item>Blue</item>
+        <item>White</item>
+        <item>Green</item>
+        <item>Red</item>
+    </string-array>
+
+    <string-array name="arrayNacio">
+        <item />
+        <item>German</item>
+        <item>Danish</item>
+        <item>English</item>
+        <item>Norwegian</item>
+        <item>Swedish</item>
+    </string-array>
+
+    <string-array name="arrayBebida">
+        <item />
+        <item>Water</item>
+        <item>Coffee</item>
+        <item>Beer</item>
+        <item>Tea</item>
+        <item>Milk</item>
+    </string-array>
+
+    <string-array name="arrayCigarro">
+        <item />
+        <item>Blends</item>
+        <item>Bluemaster</item>
+        <item>Dunhill</item>
+        <item>Pall Mall</item>
+        <item>Prince</item>
+    </string-array>
+
+    <string-array name="arrayAnimal">
+        <item />
+        <item>Dogs</item>
+        <item>Horses</item>
+        <item>Cats</item>
+        <item>Birds</item>
+        <item>Fishs</item>
+    </string-array>
+
+    <string-array name="arrayLinguagem">
+        <item>System default</item>
+        <item>English</item>
+        <item>Português (Portuguese)</item>
+    </string-array>
+
+    <string-array name="arrayLinguagemValores">
+        <item>default</item>
+        <item>en</item>
+        <item>pt</item>
+    </string-array>
+    <string name="padrao_sistema">System default</string>
+    <string name="doubleClickBack">Please click BACK again to exit</string>
+    <string name="mensagem_ao_trocar_lingua">You need to restart the app to see the changes. Do you want to restart now?</string>
+    <string name="parabens">Congratulations</string>
+    <string name="mensagem_parabens">You have completed all the stages of the challenge by showing that you are a skilled person. \n\nWould you like to start a new game now?</string>
+    <string name="iniciar_novo_jogo">Start new game</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    <string name="mensagem_sair">Do you really want to leave?</string>
+    <string name="ajuda">Help</string>
+    <string name="ok">OK</string>
+    <string name="mensagem_ajuda">Game Instructions\n-----------------------------\n\nAlbert Einstein created this IQ test (logical reasoning) in the last century and stated that 98% of the world\'s population is not able to solve it.\n\n\n» Basic rules for solving the test\n\n1. There are 5 houses of different colors;\n2. In each house lives a person of a different nationality;\n3. These 5 owners drink different drinks, smoke different types of cigarettes and have a certain pet;\n4. Neither of them have the same animal, smoke the same cigarette, or drink the same drink.\n5. You must comply with all 15 rules to win.\n\n\n» Content of the columns\n\n1st line: color\n2nd line: nationality\n3rd line: drink\n4th line: cigarette\n5th line: animal</string>
+    <string name="mensagem_first_run_1">Thanks for downloading my app.</string>
+    <string name="mensagem_first_run_2">If you still do not know how to play, you can always consult the help menu.</string>
+    <string name="mensagem_first_run_3">You can swap the houses by holding and dragging over the name of the house.</string>
+    <string name="aviso">Warning</string>
+
+</resources>

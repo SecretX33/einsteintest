@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="casa">Casa</string>
+    <string name="dicas">Dicas</string>
+    <string name="doubleClickBack">Pressione VOLTAR novamente para sair</string>
+    <string name="sair">Sair</string>
+    <string name="lingua_sistema">Linguagem do Sistema</string>
+    <string name="padrao_sistema">Padrão do sistema</string>
+    <string name="regra1">O Norueguês vive na primeira casa.</string>
+    <string name="regra10">O homem que fuma Blends vive ao lado do que tem Gatos.</string>
+    <string name="regra11">O homem que cria Cavalos vive ao lado do que fuma Dunhill.</string>
+    <string name="regra12">O homem que fuma BlueMaster bebe Cerveja.</string>
+    <string name="regra13">O Alemão fuma Prince.</string>
+    <string name="regra14">O Norueguês vive ao lado da casa Azul.</string>
+    <string name="regra15">O homem que fuma Blends é vizinho do que bebe Água.</string>
+    <string name="regra2">O Inglês vive na casa Vermelha.</string>
+    <string name="regra3">O Sueco tem Cachorros como animais de estimação.</string>
+    <string name="regra4">O Dinamarquês bebe Chá.</string>
+    <string name="regra5">A casa Verde fica do lado esquerdo da casa Branca.</string>
+    <string name="regra6">O homem que vive na casa Verde bebe Café.</string>
+    <string name="regra7">O homem que fuma Pall Mall cria Pássaros.</string>
+    <string name="regra8">O homem que vive na casa Amarela fuma Dunhill.</string>
+    <string name="regra9">O homem que vive na casa do meio bebe Leite.</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="select_language">Selecionar linguagem</string>
+    <string name="settings">Configurações</string>
+    <string name="tvAnimal">Animal</string>
+    <string name="tvBebida">Bebida</string>
+    <string name="tvCigarro">Cigarro</string>
+    <string name="tvCor">Cor</string>
+    <string name="tvNacio">Nacionalidade</string>
+    <string name="mensagem_ao_trocar_lingua">Você precisa reiniciar o app para efetuar as mudanças. Deseja reiniciar agora?</string>
+
+    <string-array name="arrayCor">
+        <item />
+        <item>Amarela</item>
+        <item>Azul</item>
+        <item>Branca</item>
+        <item>Verde</item>
+        <item>Vermelha</item>
+    </string-array>
+
+    <string-array name="arrayNacio">
+        <item />
+        <item>Alemão</item>
+        <item>Dinamarquês</item>
+        <item>Inglês</item>
+        <item>Norueguês</item>
+        <item>Sueco</item>
+    </string-array>
+
+    <string-array name="arrayBebida">
+        <item />
+        <item>Água</item>
+        <item>Café</item>
+        <item>Cerveja</item>
+        <item>Chá</item>
+        <item>Leite</item>
+    </string-array>
+
+    <string-array name="arrayCigarro">
+        <item />
+        <item>Blends</item>
+        <item>Bluemaster</item>
+        <item>Dunhill</item>
+        <item>Pall Mall</item>
+        <item>Prince</item>
+    </string-array>
+
+    <string-array name="arrayAnimal">
+        <item />
+        <item>Cachorros</item>
+        <item>Cavalos</item>
+        <item>Gatos</item>
+        <item>Pássaros</item>
+        <item>Peixes</item>
+    </string-array>
+
+    <string-array name="arrayLinguagem">
+        <item>Padrão do sistema</item>
+        <item>English</item>
+        <item>Português (Portuguese)</item>
+    </string-array>
+
+    <string-array name="arrayLinguagemValores">
+        <item>default</item>
+        <item>en</item>
+        <item>pt</item>
+    </string-array>
+    <string name="parabens">Parabéns</string>
+    <string name="mensagem_parabens">Você concluiu todas as etapas do desafio mostrando que é uma pessoa habilidosa.\n\nGostaria de iniciar um novo jogo agora?</string>
+    <string name="iniciar_novo_jogo">Iniciar novo jogo</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="mensagem_sair">Você realmente quer sair?</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="ok">Entendi</string>
+    <string name="mensagem_ajuda">Instruções do Jogo\n-------------------------------\n\nAlbert Einstein criou este teste de QI (raciocínio lógico) no século passado e afirmou que 98% da população mundial não é capaz de resolvê-lo.\n\n\n» Regras básicas para resolver o teste\n\n1. Há 5 casas de diferentes cores;\n2. Em cada casa mora uma pessoa de uma diferente nacionalidade;\n3. Esses 5 proprietários bebem diferentes bebidas, fumam diferentes tipos de cigarros e têm um certo animal de estimação;\n4. Nenhum deles têm o mesmo animal, fumam o mesmo cigarro ou bebem a mesma bebida.\n5. Deve-se cumprir com todas as 15 regras para ganhar.\n\n\n» Conteúdo das colunas\n\n1ª linha: cor\n2ª linha: nacionalidade\n3ª linha: bebida\n4ª linha: cigarro\n5ª linha: animal</string>
+    <string name="mensagem_first_run_1">Obrigado por baixar meu app.</string>
+    <string name="mensagem_first_run_2">Caso você ainda não saiba jogar, você sempre pode consultar o menu de ajuda.</string>
+    <string name="mensagem_first_run_3">Você pode trocar as casas de lugar segurando e arrastando em cima do nome da casa.</string>
+    <string name="aviso">Aviso</string>
+
+</resources>

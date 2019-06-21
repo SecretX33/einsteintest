@@ -12,4 +12,4 @@ Which my inspiration doesn't have any of these.
 
 
 ## Download
-Here we go [link](https://drive.google.com/open?id=1H-POzyCZ0Y_5rkSdGmxhuyFssb8eRB_1).
+Here we go [link](https://github.com/SecretX33/einsteintest/releases).

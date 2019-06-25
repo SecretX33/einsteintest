@@ -191,11 +191,9 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "initFragments: preparing fragment.");
         frag = new RecyclerViewFragment();
         frag2 = new HintFragment();
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
         currentFrag = "game";
-        transaction.replace(R.id.frameLayout, frag,"game").commit();
-        manager.executePendingTransactions();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout, frag,"game").commit();
+        getSupportFragmentManager().executePendingTransactions();
     }
 
     private void firstRun(){
@@ -240,15 +238,14 @@ public class MainActivity extends AppCompatActivity {
 
         if(currentFrag.equals("hint")){
             currentFrag = "game";
-            updateToolbar();
             manager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+            updateToolbar();
             transaction.replace(R.id.frameLayout, frag,"game").commit();
         }
         else if(currentFrag.equals("game") || currentFrag.equals("config")){
-            if(currentFrag.equals("game") && !isFragmentOnTop("game")){
-                transaction.addToBackStack(currentFrag);
-            } else{
-                Log.d(TAG, "abrirDica: tried to add fragment to top but it's already there.");
+            if(currentFrag.equals("game")){
+                if(!isFragmentOnTop("game")) transaction.addToBackStack(currentFrag);
+                else Log.d(TAG, "abrirDica: tried to add fragment to top but it's already there.");
             }
             currentFrag = "hint";
             updateToolbar();
@@ -263,28 +260,23 @@ public class MainActivity extends AppCompatActivity {
 
     private void abrirConfig(){
         Log.d(TAG, "abrirConfig: called.");
-        FragmentManager manager = getSupportFragmentManager();
-        FragmentTransaction transaction = manager.beginTransaction();
-        
-        if(manager==null) {
-            Log.wtf(TAG, "abrirConfig: manager is null, what is going on?!");
-        } else if(transaction==null) {
-            Log.wtf(TAG, "abrirConfig: transaction is null, what is going on?!");
-        } else {
-            if (!currentFrag.equals("config")) {
-                Log.d(TAG, "abrirConfig: opening config screen.");
-                if(!isFragmentOnTop(currentFrag)) {
-                    transaction.addToBackStack(currentFrag);
-                } else{
-                    Log.d(TAG, "abrirConfig: tried to add fragment to top but it's already there.");
-                }
-                currentFrag = "config";
-                updateToolbar();
-                transaction.replace(R.id.frameLayout, new ConfigFragment()).commit();
-                manager.executePendingTransactions();
+
+        if (!currentFrag.equals("config")) {
+            FragmentManager manager = getSupportFragmentManager();
+            FragmentTransaction transaction = manager.beginTransaction();
+
+            Log.d(TAG, "abrirConfig: opening settings screen.");
+            if(!isFragmentOnTop(currentFrag)) {
+                transaction.addToBackStack(currentFrag);
             } else{
-                Log.d(TAG, "abrirConfig: called but user is already on config.");
+                Log.d(TAG, "abrirConfig: tried to add fragment to top but it's already there.");
             }
+            currentFrag = "config";
+            updateToolbar();
+            transaction.replace(R.id.frameLayout, new ConfigFragment()).commit();
+            manager.executePendingTransactions();
+        } else{
+            Log.d(TAG, "abrirConfig: called but user is already on config.");
         }
     }
 
@@ -294,13 +286,14 @@ public class MainActivity extends AppCompatActivity {
 
         if(index>0) {
             FragmentManager.BackStackEntry ultimo_frag = manager.getBackStackEntryAt(index - 1);
-            String ultimo_frag_nome = ultimo_frag.getName();
 
             if (ultimo_frag == null) {
                 Log.wtf(TAG, "isFragmentOnTop: fragment could not be found.");
-            } else if (ultimo_frag_nome == null){
-                Log.wtf(TAG, "isFragmentOnTop: last fragment doesn't have a tag.");
-            } else return ultimo_frag_nome.equals(tag);
+            } else{
+                String ultimo_frag_nome = ultimo_frag.getName();
+                if (ultimo_frag_nome == null) Log.wtf(TAG, "isFragmentOnTop: last fragment doesn't have a tag.");
+                else return ultimo_frag_nome.equals(tag);
+            }
         }
         return false;
     }

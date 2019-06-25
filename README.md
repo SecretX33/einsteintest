@@ -12,4 +12,4 @@ Which my inspiration doesn't have any of these.
 
 
 ## Download
-Since I know we tend to be kinda lazy ~~myself included~~, you can get a compiled APK of this app right off my personal Google Drive by clicking [here](https://drive.google.com/open?id=1H-POzyCZ0Y_5rkSdGmxhuyFssb8eRB_1).
+Here we go [link](https://github.com/SecretX33/einsteintest/releases).
